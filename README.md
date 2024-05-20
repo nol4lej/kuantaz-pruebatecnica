@@ -1,8 +1,26 @@
-# React + Vite
+# Formularios dinámicos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Prueba técnica desarrollada para Kuantaz.
 
-Currently, two official plugins are available:
+## Descripción:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Diseñar formularios interactivos que se adapten dinámicamente a través de un endpoint proporcionado. Estos formularios aprovecharán los componentes de entrada de Material UI y estarán implementados en React. Al hacer clic en el botón de confirmación, se revelarán las respuestas proporcionadas por el usuario en el formulario.
+
+## Cómo Empezar
+
+Para comenzar a usar la aplicación, sigue estos pasos:
+
+1. **Clona el Repositorio:**  
+```
+git clone https://github.com/nol4lej/kuantaz-pruebatecnica
+```
+
+2. **Instala las Dependencias:**  
+```
+npm install
+```
+
+3. **Inicia la Aplicación en Desarrollo:**  
+```
+npm run dev
+```
