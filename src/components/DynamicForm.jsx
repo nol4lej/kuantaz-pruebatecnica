@@ -1,4 +1,3 @@
-// DynamicForm.jsx
 import { useState } from 'react';
 import { Button, Box, Typography, CircularProgress } from '@mui/material';
 import ErrorIcon from '@mui/icons-material/Error';
@@ -24,8 +23,12 @@ const DynamicForm = () => {
         formFields.forEach((field, index) => {
             const { name, label } = field;
             const uniqueFieldName = `${name}_${index}`;
-            submittedDataWithLabels[label] = formData[uniqueFieldName];
+            if(formData[uniqueFieldName]){
+                submittedDataWithLabels[label] = formData[uniqueFieldName];
+            }
+            
         });
+
         setSubmittedData(submittedDataWithLabels);
     };
 
