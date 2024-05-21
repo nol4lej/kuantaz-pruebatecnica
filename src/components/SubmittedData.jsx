@@ -4,16 +4,15 @@ import ErrorIcon from '@mui/icons-material/Error';
 const SubmittedData = ({ submittedData }) => {
     if (Object.keys(submittedData).length === 0) {
         return (
-            <Typography color="error" align="center" display="flex" alignItems="center" justifyContent="center" gap={1} padding={2}>
-                <ErrorIcon />
+            <Typography color="error" display="grid" justifyItems="center" justifyContent="center" gap={1} padding={2}>
+                <ErrorIcon fontSize="large" />
                 No hay datos disponibles
             </Typography>
         );
     }
 
     return (
-        <Box sx={{ mt: 3 }}>
-            <Typography variant="h6">Datos del Formulario:</Typography>
+        <Box>
             <Paper variant="outlined" sx={{ p: 2, overflowWrap: 'break-word' }}>
                 {Object.entries(submittedData).map(([key, value]) => (
                     value && (
